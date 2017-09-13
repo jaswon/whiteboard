@@ -1,0 +1,16 @@
+{
+  "name": "whiteboard",
+  "version": "1.0.0",
+  "description": "collaborative whiteboard",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "jaswon5791",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "socket.io": "^2.0.3"
+  }
+}

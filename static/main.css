@@ -1,0 +1,79 @@
+body,html {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+#whiteboard, #hud { position: absolute; }
+
+#hud {
+  position: absolute;
+  background-color: #eee;
+  bottom: 0;
+  margin: 10px;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+#hud > * { margin: 5px; }
+
+#title {
+  background-color: #eee;
+  position: absolute;
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #888;
+}
+
+.palette {
+  border: 3px solid #bbb;
+  outline: none;
+  user-select: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.weight-container {
+  width: 60px;
+  height: 60px;
+  transition: .1s all ease;
+}
+
+.weight-container:hover {
+  width: 240px;
+}
+
+.weight-track {
+  position: absolute;
+  margin-left: 26px;
+  margin-top: 26px;
+  width: 0;
+  height: 8px;
+  border-radius: 4px;
+  background: #ccc;
+  transition: .1s all ease;
+}
+
+.weight-container:hover .weight-track {
+   width: calc(240px - 60px + 8px);
+}
+
+.weight-thumb {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #ccc;
+  margin-left: 0;
+  transition: .1s all ease;
+}
+
+.weight-preview {
+  background: #000;
+}
